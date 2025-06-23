@@ -105,7 +105,7 @@ export default function DashboardPage() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">Commander's Dashboard</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-6">Commander&apos;s Dashboard</h1>
             
             {/* 5. Add filter UI elements */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6 p-4 bg-white rounded-lg shadow-md">
