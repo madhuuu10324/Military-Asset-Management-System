@@ -30,10 +30,9 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'a-default-secret-key-for-developmen
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'mams-backend.onrender.com,localhost,127.0.0.1').split(',')
 
-CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', 'http://localhost:3000,http://127.0.0.1:3000').split(',')
-
+CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', 'https://military-asset-management-system-eight.vercel.app,http://localhost:3000').split(',')
 
 # Application definition
 
@@ -104,10 +103,11 @@ SIMPLE_JWT = {
 
 # CORS settings to allow your Next.js frontend to connect
 CORS_ALLOWED_ORIGINS = [
+    "https://military-asset-management-system-eight.vercel.app",
     "http://localhost:3000", # Your Next.js development server
     "http://127.0.0.1:3000",
 ]
-
+DJANGO_ALLOWED_HOSTS="https://mams-backend.onrender.com/api"
 
 
 # Database
